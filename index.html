@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Earth</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="stars" aria-hidden="true"></div>
+
+  <main class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">You've made it.</p>
+      <h1 class="hero__title">Welcome,<br/><em>Earthling.</em></h1>
+      <p class="hero__subtitle">
+        Somewhere out there, 408 km above the surface, this photo was taken.<br/>
+        You're here now. Let's make it worthwhile.
+      </p>
+
+      <button class="fact-btn" id="factBtn" aria-live="polite">
+        <span class="fact-btn__ring"></span>
+        <span class="fact-btn__text">Click for a Random Fact</span>
+      </button>
+
+      <div class="fact-card" id="factCard" aria-live="polite" hidden>
+        <span class="fact-card__label">Did you know?</span>
+        <p class="fact-card__text" id="factText"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made by Noble Saru Magar </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
